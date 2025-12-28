@@ -5,6 +5,8 @@ TERM = "xterm-256color"
 
 [window]
 decorations = "buttonless"
+dynamic_title = false
+title = ""
 dynamic_padding = false
 opacity = 0.75
 
@@ -34,3 +36,37 @@ style = "Regular"
 [font.bold_italic]
 family = "SauceCodePro Nerd Font"
 style = "Bold Italic"
+
+# Colors (Hyper port para Alacritty)
+[colors.primary]
+background = "0x000000"
+foreground = "0xd9e0ee"
+
+[colors.cursor]
+text   = "0x000000"
+cursor = "0xf5c2e7"
+
+[colors.normal]
+black   = "0x1e1e2e"
+red     = "0xf38ba8"
+green   = "0xa6e3a1"
+yellow  = "0xf9e2af"
+blue    = "0x89b4fa"
+magenta = "0xcba6f7"
+cyan    = "0x94e2d5"
+white   = "0xd9e0ee"
+
+[colors.bright]
+black   = "0x585b70"
+red     = "0xf38ba8"
+green   = "0xa6e3a1"
+yellow  = "0xf9e2af"
+blue    = "0x89b4fa"
+magenta = "0xcba6f7"
+cyan    = "0x94e2d5"
+white   = "0xffffff"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Super|Shift"
+action = "SpawnNewInstance"
