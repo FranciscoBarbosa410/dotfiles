@@ -1,7 +1,5 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
-
-# overwrite greeting
-# potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
+if status is-interactive
+# Commands to run in interactive sessions can go here
+end
+alias nixconf="env EDITOR=nano sudo -E nano /etc/nixos/configuration.nix"
+alias nixrebuild="sudo nixos-rebuild switch"
